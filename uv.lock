@@ -84,10 +84,11 @@ wheels = [
 [[package]]
 name = "jev-content-mod"
 version = "0.1.0"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "jevlang" },
     { name = "python-dotenv" },
+    { name = "typesafe-sdk" },
 ]
 
 [package.dev-dependencies]
@@ -98,11 +99,12 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "jevlang", specifier = ">=0.1.0" },
-    { name = "python-dotenv", specifier = ">=1.2.4" },
+    { name = "python-dotenv", specifier = ">=1.0.0" },
+    { name = "typesafe-sdk", specifier = ">=0.1.0" },
 ]
 
 [package.metadata.requires-dev]
-dev = [{ name = "ruff", specifier = ">=0.17.0" }]
+dev = [{ name = "ruff", specifier = ">=0.6.0" }]
 
 [[package]]
 name = "jevlang"
